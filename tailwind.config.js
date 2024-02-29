@@ -24,9 +24,6 @@ module.exports = {
         '128': '32rem',
         '144': '36rem',
       },
-      borderRadius: {
-        '4xl': '2rem',
-      }
     }
   },
   darkMode: "class",
