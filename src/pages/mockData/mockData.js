@@ -1,5 +1,5 @@
 export const mockData = { 
-    "header": {
+    "header": { /// Header menu data
         "isMenuOpen": false,
         "menuItems": [
             {
@@ -12,7 +12,7 @@ export const mockData = {
             }
         ]
     },
-    "home": {
+    "home": { /// Home page data from the Hero section
         "title": "<span>Store Competitive,</span><br /><span>Store Hassle-free.</span>",
         "steps": [
             {
@@ -26,7 +26,7 @@ export const mockData = {
             }
         ],
     },
-    "trustpilot": {
+    "trustpilot": { /// Trustpilot widget data
         "templateId": "5613c9cde69ddc09340c6beb",
         "businessUnitId": "56a13c930000ff000587eac2",
         "locale": "en-GB",
