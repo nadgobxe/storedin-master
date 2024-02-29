@@ -1,0 +1,11 @@
+.active {
+  --nextui-primary: #0070f3;
+  color: blue;
+  font-weight: 400;
+  color: var(--nextui-primary);;
+}
+
+.thick-line > span:last-child::before, span:last-child::after  {
+  content: '';
+  height: 3px;
+}
