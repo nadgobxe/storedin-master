@@ -16,7 +16,7 @@ export default function FormStepOne() {
                 variant='bordered'
 
             />
-            <Button className="bg-[#2EBBB6] w-full md:w-auto text-white font-raleway font-semibold" color="primary" variant="flat" >             Get A Quote
+            <Button className="bg-[#2EBBB6] w-full md:w-auto text-white font-raleway font-semiboldnp" color="primary" variant="flat" >             Get A Quote
             </Button>
         </div>
     )
