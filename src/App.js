@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/parts/Header';
+import Main from './components/parts/Main';
+import Footer from './components/parts/Footer';
+import { NextUIProvider } from "@nextui-org/react";
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NextUIProvider>
+        <Header />
+        <Main />
+        <Footer />
+      </NextUIProvider>
     </div>
   );
 }
