@@ -42,8 +42,8 @@ export default function FormStepOne() {
 
     return (
         <div className="flex w-full flex-wrap items-end mt-10 md:flex-nowrap mb-6 md:mb-0 gap-4">
-            <Input className="font-raleway font-bold " value={pickupAddress} onChange={handlePostCode} variant="bordered"
-      placeholder="Enter your Postcode"/>
+            <Input className="font-raleway font-bold " type="address" value={pickupAddress} onChange={handlePostCode} variant="flat"
+      placeholder="Enter your Postcode" />
             {deliveryAddress ? (
                 <Select placeholder="Select your Address" onSelect={handleSelectAddress} className="w-full font-bold md:w-auto font-raleway next-ui-input bg-white rounded-md">
                     {deliveryAddress &&
@@ -61,6 +61,7 @@ export default function FormStepOne() {
                 className="bg-[#2EBBB6] w-full md:w-auto text-white font-raleway font-semiboldnp"
                 color="primary"
                 variant="flat"
+                href='/booking'
             >
                 Get A Quote
             </Button>

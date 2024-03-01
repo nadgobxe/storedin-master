@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <div className='px-6'>
-      <div className="flex flex-row gap-4">
+      <div className="flex flex-row gap-4 justify-around">
         <div className="flex flex-col gap-4">
           <h1 className="text-xl font-bold text-left font-montserrat mb-2"
             dangerouslySetInnerHTML={{ __html: mockData.home.title }} /// Title is a string with html tags so we use dangerouslySetInnerHTML to render it
@@ -27,7 +27,7 @@ export default function Home() {
           </div>
         </div>
         <div className='flex flex-wrap content-center'>
-          <img src={workingman} alt="workingman" className="h-20" />
+          <img src={workingman} alt="workingman" className="h-24" />
         </div>
       </div>
       <FormStepOne />

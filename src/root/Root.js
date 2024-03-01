@@ -5,7 +5,7 @@ import Booking from '../pages/Booking';
 export default function Root() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="booking" element={<Booking />} />
     </Routes>
   );
