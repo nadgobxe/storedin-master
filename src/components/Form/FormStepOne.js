@@ -38,19 +38,22 @@ export default function FormStepOne() {
 
 
 
+    const handleSelectAddress = (value) => {
+        setPickupAddress(value);
+    }
+
     return (
         <div className="flex w-full flex-wrap items-end mt-10 md:flex-nowrap mb-6 md:mb-0 gap-4">
-            <Input onChange={handlePostCode}/>
+            <Input value={pickupAddress} onChange={handlePostCode}/>
             {deliveryAddress ? (
-                <Select placeholder="Delivery Address">
-                    {console.log(deliveryAddress)}
+                <Select placeholder="Delivery Address" onSelect={handleSelectAddress}>
                     {deliveryAddress &&
                         deliveryAddress.map((address, index) => (
                             <SelectItem
                                 key={index}
                                 value={address}
-                                label={address}
-                            > {address}</SelectItem>
+                            >{address} 
+                            </SelectItem>
                         ))}
                 </Select>
             ) : null}
@@ -62,8 +65,6 @@ export default function FormStepOne() {
             >
                 Get A Quote
             </Button>
-
-            
         </div>
     );
 }
