@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from "@nextui-org/react";
 import GooglePlacesAutocomplete from 'react-google-places-autocomplete';
+import { useNavigate } from 'react-router-dom';
+import { isDisabled } from '@testing-library/user-event/dist/utils';
 
 
 export default function FormStepOne() {
@@ -14,6 +16,12 @@ export default function FormStepOne() {
         } else if (inputType === 'delivery') {
             setDeliveryAddress(address);
         }
+    };
+
+    const navigate = useNavigate();
+
+    const handleGetQuote = () => {
+        navigate('/booking');
     };
 
     return (
@@ -31,6 +39,8 @@ export default function FormStepOne() {
                 className="bg-[#2EBBB6] w-full md:w-auto text-white font-raleway font-semiboldnp"
                 color="primary"
                 variant="flat"
+                {...pickupAddress ? isDisabled : null} 
+                onClick={handleGetQuote}
             >
                 Get A Quote
             </Button>
