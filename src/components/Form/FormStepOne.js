@@ -44,12 +44,12 @@ export default function FormStepOne() {
 
     return (
         <div className="flex w-full flex-wrap items-end mt-10 md:flex-nowrap mb-6 md:mb-0 gap-4">
-            <Input className='font-raleway' value={pickupAddress} onChange={handlePostCode}/>
+            <Input className="w-full md:w-auto font-raleway font-bold next-ui-input bg-white rounded-md" value={pickupAddress} onChange={handlePostCode}/>
             {deliveryAddress ? (
-                <Select placeholder="Select your Address" onSelect={handleSelectAddress} className='font-raleway'>
+                <Select placeholder="Select your Address" onSelect={handleSelectAddress} className="w-full md:w-auto font-raleway font-bold next-ui-input bg-white rounded-md">
                     {deliveryAddress &&
                         deliveryAddress.map((address, index) => (
-                            <SelectItem
+                            <SelectItem className="w-full md:w-auto font-raleway font-bold next-ui-input bg-white rounded-md"
                                 key={index}
                                 value={address}
                             >{address} 
