@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button } from "@nextui-org/react";
+
 
 
 export default function Header() {
@@ -16,6 +17,7 @@ export default function Header() {
         href: "/booking",
     },
     ];
+
 
 
     return (
