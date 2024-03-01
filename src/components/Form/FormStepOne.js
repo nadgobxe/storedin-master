@@ -44,9 +44,9 @@ export default function FormStepOne() {
 
     return (
         <div className="flex w-full flex-wrap items-end mt-10 md:flex-nowrap mb-6 md:mb-0 gap-4">
-            <Input value={pickupAddress} onChange={handlePostCode}/>
+            <Input className='font-raleway' value={pickupAddress} onChange={handlePostCode}/>
             {deliveryAddress ? (
-                <Select placeholder="Delivery Address" onSelect={handleSelectAddress}>
+                <Select placeholder="Select your Address" onSelect={handleSelectAddress} className='font-raleway'>
                     {deliveryAddress &&
                         deliveryAddress.map((address, index) => (
                             <SelectItem
