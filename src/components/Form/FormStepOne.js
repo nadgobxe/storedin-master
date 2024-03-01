@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button, Input, Select, SelectItem } from "@nextui-org/react";
+import { useNavigate } from 'react-router-dom';
 
 
 export default function FormStepOne() {
@@ -40,6 +41,12 @@ export default function FormStepOne() {
         setPickupAddress(value);
     }
 
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/booking'); // Use navigate to redirect
+    }
+
     return (
         <div className="flex w-full flex-wrap items-end mt-10 md:flex-nowrap mb-6 md:mb-0 gap-4">
             <Input className="font-raleway font-bold " type="address" value={pickupAddress} onChange={handlePostCode} variant="flat"
@@ -61,7 +68,7 @@ export default function FormStepOne() {
                 className="bg-[#2EBBB6] w-full md:w-auto text-white font-raleway font-semiboldnp"
                 color="primary"
                 variant="flat"
-                href='/booking'
+                onClick={handleClick}
             >
                 Get A Quote
             </Button>
