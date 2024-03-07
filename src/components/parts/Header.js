@@ -26,7 +26,7 @@ export default function Header() {
             <Navbar onMenuOpenChange={setIsMenuOpen}>
                 <NavbarContent>
                     <NavbarBrand className='text-amber-700'>
-                        <p className="font-bold text-inherit text-amber-700 font-montserrat antialiased text-2xl">storedIn</p>
+                        <p className="font-bold text-inherit text-amber-700 font-montserrat antialiased text-2xl">Holdem Removals</p>
                     </NavbarBrand>
                 </NavbarContent>
 
