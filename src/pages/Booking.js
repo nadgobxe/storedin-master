@@ -1,7 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Calendar from '../components/Calendar/Calendar';
 
 export default function Booking() {
   return (
-    <div>Booking</div>
+    <div>
+      <Calendar />
+    </div>
   )
 }
