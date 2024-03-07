@@ -13,7 +13,7 @@ export const mockData = {
         ]
     },
     "home": { /// Home page data from the Hero section
-        "title": "<span>Store Competitive,</span><br /><span>Store Hassle-free.</span>",
+        "title": "<span>Move Competitive,</span><br /><span>Move Hassle-free.</span>",
         "steps": [
             {
                 "title": "collect",
